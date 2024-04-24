@@ -8,9 +8,10 @@ export default {
     extend: {
       colors: {
         customRed: '#b60d0d',
+        customBrown: '#500606',
         customyellow: '#fccf2f'
       }, fontFamily: {
-        'custom': ['CustomFont', 'Montserrat'],
+        'mont': ['Montserrat', 'sans-serif'],
       },
       fontWeight: {
         'custom-light': 300,
@@ -18,6 +19,10 @@ export default {
         'custom-semibold': 600,
         'custom-bold': 700,
       },
+      gradientColorStops: theme => ({
+        'red-brown': ['#3490dc', '#38a169'],
+        // Add more gradient color stops as needed
+      })
     },
   },
   plugins: [],

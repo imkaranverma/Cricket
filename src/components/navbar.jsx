@@ -8,7 +8,7 @@ function Navbar() {
         <div className="flex items-center">
           <Link to="/" className="text-white text-lg font-bold">My Website</Link>
         </div>
-        <div className="flex space-x-4">
+        <div className="flex space-x-8">
           <Link to="/buy" className="text-gray-300 hover:text-white">Buy</Link>
           <Link to="/about" className="text-gray-300 hover:text-white">About</Link>
           <Link to="/prediction" className="text-gray-300 hover:text-white">Prediction</Link>
