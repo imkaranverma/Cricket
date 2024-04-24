@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react';
 
-const teams = ["CSK", "GT", "DC", "KKR", "LSG", "MI", "PK", "RR", "RCB", "SH"];
+const teams = ["CSK", "GT", "DC", "KKR", "LSG", "MI", "PBKS", "RR", "RCB", "SRH"];
 
 function MatchForm() {
   const [formData, setFormData] = useState({
