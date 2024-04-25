@@ -9,7 +9,7 @@ export default function Card(data) {
   return (
     <div> {/* Adjusted padding for smaller devices */}
    
-      <div className="w-full md:w-4/5 lg:w-4/5 xl:w-1/2 mx-auto"> {/* Centered and adjusted width */}
+      <div className="w-11/12 md:w-4/5 lg:w-4/5 xl:w-1/2 mx-auto"> {/* Centered and adjusted width */}
         <div className="rounded-3xl p-4 md:p-8 bg-gradient-to-r from-customRed to-customBrown">
           <div className="text-center">
             <div className="font-mont font-extrabold text-2xl md:text-3xl text-white"> {/* Adjusted font size */}
@@ -21,7 +21,7 @@ export default function Card(data) {
           </div>
           <div className="mt-4 md:mt-6 bg-white rounded-b-3xl flex flex-col items-center">
             <div className="font-bold flex flex-row items-center justify-between px-4 md:px-12 py-4 md:py-2 w-full rounded-md">
-              <div className="flex flex-col justify-between pt-4 w-72 md:flex-row items-center">
+              <div className="flex flex-col justify-between md:pt-4 w-72 md:flex-row items-center">
                 <img className="w-24 md:w-36 h-auto"src={team1} alt="" />
                 <div className="font-mont font-bold text-2xl">CSK</div>
               </div>
