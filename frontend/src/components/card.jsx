@@ -20,18 +20,22 @@ export default function Card(data) {
             </div>
           </div>
           <div className="mt-4 md:mt-6 bg-white rounded-b-3xl flex flex-col items-center">
-            <div className="font-bold flex flex-col md:flex-row items-center justify-between px-4 md:px-12 py-4 md:py-8 w-full rounded-md">
-              <img src={team1} alt="Team 1 image" className="w-20 md:w-32 h-auto" /> {/* Adjusted image size */}
-              <div className="md:mx-8 flex flex-col justify-center items-center w-full md:w-auto md:rounded-md"> {/* Adjusted margin and width */}
-                <div className="text-lg md:text-2xl w-full flex justify-between items-center">
-                  <div className="px-4">CSK</div>
-                  <div className="px-4">vs</div>
-                  <div className="px-4">MI</div>
-                </div>
+            <div className="font-bold flex flex-row items-center justify-between px-4 md:px-12 py-4 md:py-2 w-full rounded-md">
+              <div className="flex flex-col justify-between pt-4 w-72 md:flex-row items-center">
+                <img className="w-24 md:w-36 h-28"src={team1} alt="" />
+                <div className="font-mont font-bold text-2xl">CSK</div>
               </div>
-              <img src={team2} alt="Team 2 image" className="w-20 md:w-32 h-auto"/> {/* Adjusted image size */}
+
+              <div className="font-mont font-bold text-2xl">vs</div>
+
+              <div className="flex flex-col-reverse justify-between pt-4 w-72 md:flex-row items-center">
+                <div className="font-mont font-bold text-2xl">MI</div>
+                <img className="w-24 md:w-36 h-28"src={team2} alt="" />
+              </div>
+
+
             </div>
-            <div className="font-mont font-semibold text-sm md:text-base mt-2 md:mt-4"> {/* Adjusted font size */}
+            <div className="font-mont font-extrabold text-sm md:text-base mt-2 md:mt-4"> {/* Adjusted font size */}
               Wednesday, 26th April, 06:00 PM
             </div>
             <div>
@@ -48,3 +52,5 @@ export default function Card(data) {
     </div>
   );
 }
+
+
