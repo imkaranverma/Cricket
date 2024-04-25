@@ -6,13 +6,15 @@ import Buy_Page from './components/Buy_page';
 import About from './components/About';
 import Contact from './components/Contact';
 import Create from './components/create';
+import BuyPage from './components/buyPage/buyPage';
 
 function App() {
   return (
     <>
       <Routes>
         {/* <Route path="/new" element={<New />} /> */}
-        <Route path="/" element={<Home_Page />} />
+        {/* <Route path="/" element={<Home_Page />} /> */}
+        <Route path="/" element={<BuyPage />} />
         <Route path="/prediction" element={<Prediction_Page />} />
         <Route path="/buy" element={<Buy_Page />} />
         <Route path='/about' element={<About/>}></Route>

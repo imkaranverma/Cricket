@@ -7,7 +7,7 @@ router.get('/', async (req, res) => {
   try {
     const today = new Date();
     const previousMatches = await Match.find({ matchDate: { $lt: today } });
-    res.send(previousMatches);
+    res.json(previousMatches);
   } catch (err) {
     res.status(500).json({ message: err.message });
   }

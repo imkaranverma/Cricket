@@ -2,8 +2,8 @@ const mongoose = require('mongoose');
 // const { MongoClient } = require('mongodb');
 
 // mongoose.connect(`mongodb+srv://pass:pass@eventcluster.blixsin.mongodb.net/`)
-// mongoose.connect("mongodb://127.0.0.1:27017/Cricket")
-mongoose.connect("mongodb+srv://akshaychauhan:askaychauhan@matchdatabase.hd4jvpk.mongodb.net/")
+mongoose.connect("mongodb://127.0.0.1:27017/Cricket")
+// mongoose.connect("mongodb+srv://akshaychauhan:askaychauhan@matchdatabase.hd4jvpk.mongodb.net/")
 .then(() => {
     console.log('COnntedd!!!');
 })
@@ -36,7 +36,23 @@ const matchSchema = new mongoose.Schema({
     type: String,
     default: null
   },
+  tossDate: {
+    type: Date,
+    default: null
+  },
+  tossTime: {
+    type: String,
+    default: null
+  },
   matchWinner: {
+    type: String,
+    default: null
+  },
+  matchwinnerDate: {
+    type: Date,
+    default: null
+  },
+  matchwinnerTime: {
     type: String,
     default: null
   },
@@ -44,8 +60,45 @@ const matchSchema = new mongoose.Schema({
     type: String,
     unique: true,
     required: true
+  }, 
+  team1Run: {
+    type: Number,
+    default: null
+  },
+  team1Wicket: {
+    type: Number,
+    default: null
+  },
+  team1Over: {
+    type: String,
+    default: null
+  },
+  team2Run: {
+    type: Number,
+    default: null
+  },
+  team2Wicket: {
+    type: Number,
+    default: null
+  },
+  team2Over: {
+    type: String,
+    default: null
+  },
+  actualmatchWinner: {
+    type: String,
+    default: null
+  },
+  actualtossWinner: {
+    type: String,
+    default: null
+  },
+  highlight: {
+    type: String,
+    default: null
   }
 });
+
 
 const Match = mongoose.model('Match', matchSchema);
 
