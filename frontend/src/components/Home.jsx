@@ -7,16 +7,20 @@ import Card from './card';
 import Heading from './Heading';
 
 function Home_Page() {
+  let next_heading = "NEXT MATCH"
+  let upcoming_heading = "UPCOMING MATCH"
   return (
     <>
     <Navbar/>
     {/* <Prediction_Page/>
     <Buy_Page/>
     <Contact/> */}
-    <div className='mt-16 md:mt-1'>Hello</div>
-    <Heading/>
+    <div className='mt-8 md:mt-1'></div>
+    <Heading heading={next_heading}/>
       <Card/>
-    
+      <div className="mt-8 md:w-76 border-2 border-solid border-customRed rounded-3xl"></div>
+    <Heading heading={upcoming_heading} />
+    <Card/>
     
     </>
   );

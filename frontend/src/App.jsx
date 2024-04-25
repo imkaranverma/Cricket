@@ -7,6 +7,7 @@ import About from './components/About';
 import Contact from './components/Contact';
 import Create from './components/create';
 import BuyPage from './components/buyPage/buyPage';
+import Previous from './components/Previous_page';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path="/prediction" element={<Prediction_Page />} />
         <Route path="/buy" element={<Buy_Page />} />
         <Route path='/about' element={<About/>}></Route>
+        <Route path='/previousmatches' element={<Previous/>}></Route>
         <Route path='/contact' element={<Contact/>}></Route>
         <Route path='/create' element={<Create/>}></Route>
       </Routes>

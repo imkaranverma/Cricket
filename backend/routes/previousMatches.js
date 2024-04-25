@@ -6,8 +6,8 @@ const Match = require('../model/match');
 router.get('/', async (req, res) => {
   try {
     const today = new Date();
-    const previousMatches = await Match.find({ matchDate: { $lt: today } });
-    res.json(previousMatches);
+    const previousMatches = await Match.find({ matchDate: { $lt: today } }).sort({ matchDate: -1 });
+    res.send(previousMatches);
   } catch (err) {
     res.status(500).json({ message: err.message });
   }
