@@ -15,14 +15,14 @@ export default function Card(data) {
             <div className="font-mont font-extrabold text-2xl md:text-3xl text-white"> {/* Adjusted font size */}
               Indian Premiere League 2024
             </div>
-            <div className="font-mont text-lg md:text-2xl font-semibold"> {/* Adjusted font size */}
+            <div className="font-mont text-white text-lg md:text-2xl font-semibold"> {/* Adjusted font size */}
               24th Match
             </div>
           </div>
           <div className="mt-4 md:mt-6 bg-white rounded-b-3xl flex flex-col items-center">
             <div className="font-bold flex flex-row items-center justify-between px-4 md:px-12 py-4 md:py-2 w-full rounded-md">
               <div className="flex flex-col justify-between pt-4 w-72 md:flex-row items-center">
-                <img className="w-24 md:w-36 h-28"src={team1} alt="" />
+                <img className="w-24 md:w-36 h-auto"src={team1} alt="" />
                 <div className="font-mont font-bold text-2xl">CSK</div>
               </div>
 
@@ -30,7 +30,7 @@ export default function Card(data) {
 
               <div className="flex flex-col-reverse justify-between pt-4 w-72 md:flex-row items-center">
                 <div className="font-mont font-bold text-2xl">MI</div>
-                <img className="w-24 md:w-36 h-28"src={team2} alt="" />
+                <img className="w-24 md:w-36 h-auto"src={team2} alt="" />
               </div>
 
 

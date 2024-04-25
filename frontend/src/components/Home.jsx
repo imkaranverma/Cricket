@@ -13,10 +13,11 @@ function Home_Page() {
     {/* <Prediction_Page/>
     <Buy_Page/>
     <Contact/> */}
-    <div className='mt-8 md:mt-1'>Hello</div>
+    <div className='mt-8 md:mt-1'></div>
     <Heading/>
       <Card/>
-    
+    <Heading/>
+    <Card/>
     
     </>
   );
