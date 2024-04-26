@@ -31,6 +31,9 @@ router.post('/', async (req, res) => {
       highlight
     });
 
+    console.log(req.body)
+    console.log("QI")
+    console.log(newMatch)
     await newMatch.save();
 
     res.status(201).json({ message: 'Match created successfully.' });

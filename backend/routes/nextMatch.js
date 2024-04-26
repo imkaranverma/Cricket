@@ -9,7 +9,7 @@ router.get('/', async (req, res) => {
       
       // Find the next upcoming match by sorting matches by matchDate in ascending order
       // and limiting the result to 1 match
-      const nextMatch = await Match.findOne({ matchDate: { $gte: today } }).sort({ matchDate: 1 }).limit(1);
+      const nextMatch = await Match.findOne({ matchDate: { $gte: today } }).sort({ matchDate: 1 }).limit(1).maxTimeMS(20000);
       
       if (nextMatch) {
         res.json(nextMatch);
