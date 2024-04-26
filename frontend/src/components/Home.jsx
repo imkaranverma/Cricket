@@ -18,7 +18,9 @@ function Home_Page() {
     <div className='mt-8 md:mt-1'></div>
     <Heading heading={next_heading}/>
       <Card/>
-      <div className="mt-8 md:w-76 border-2 border-solid border-customRed rounded-3xl"></div>
+      {/* <div className='flex justify-center'>
+      <div className="mt-8 md:w-10/12 border-2 border-solid border-customRed rounded-full"></div>
+      </div> */}
     <Heading heading={upcoming_heading} />
     <Card/>
     
