@@ -1,17 +1,18 @@
 import Heading from "./Heading"
 import { useEffect,useState } from "react";
-import { Link } from "react-router-dom";
 import Card from "./card";
+import Navbar from "./navbar";
 
 export default function Previous(){
 
     const [previous, setPrevious] = useState([]);
+    let view = "View Prediction"
 
     useEffect(() => {
       // // Function to fetch all event data from the backend
       const fetchAllPrevious = async () => {
         try {
-          const response = await fetch('http://localhost:3000/prevmatches');
+          const response = await fetch('https://cricket-prediction-66bh.onrender.com/prevmatches');
           const data = await response.json();
           setPrevious(data); // // Assuming the backend returns an array of events
         } catch (error) {
@@ -24,16 +25,15 @@ export default function Previous(){
     }, []); 
 
     let previous_heading = "PREVIOUS MATCHES"
-    console.log(previous)
+    // console.log(previous)
     return(
         <>
+        <Navbar />
         <Heading heading={previous_heading}/>
-        {previous.map((previous) => (
-                <Link key={previous.uniqueId} to={`/events_page/${previous.uniqueId}`}>
-                {/* <Event_details  key={events.uniqueId} icon= {imageComponentsArray[Math.floor(Math.random() * imageComponentsArray.length)]} title={events.eventName} des={events.eventCategory} /> */}
-                <Card />
-        </Link>
+        {previous.map((previous) => ( 
+                <Card prev="true" btn_link='prediction' key={previous.uniqueId} btn_des={view} data={previous}/> 
       ))}
+     
         </>
     )
     
