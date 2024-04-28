@@ -5,12 +5,12 @@ import './buyPage.css'
 
 function BuyPage() {
   return (
-        <div className='bg-[#F2F2F2] m-0 p-0'> {/* Adjusted padding for smaller devices */}
+        <div className='bg-[#F2F2F2] m-0 p-0 overscroll-x-none overflow-x-hidden'> {/* Adjusted padding for smaller devices */}
 
 
-<nav className=" bg-gradient-to-r from-customRed to-customBrown p-6 fixed top-0 z-10 md:w-[100%] w-[80%]">
+<nav className=" bg-gradient-to-r from-customRed to-customBrown py-6 fixed top-0 border-red-600 md:w-[100%] w-[80%]">
       <div className="container mx-auto flex justify-between items-center">
-        <div className="flex items-center text-white text-4xl font-bold">
+        <div className="items-center text-white text-4xl font-bold">
           {/* <Link to="/" className="text-white text-lg font-bold">My Website</Link> */}
           AKC.
         </div>
@@ -25,8 +25,9 @@ function BuyPage() {
     {/* <div>
       <div className='w-full bg-white h-6 pt-40'> </div>
     </div> */}
+  <div className='overscroll-x-none overflow-x-hidden'>
    
-   <div className="md:w-full mx-5  md:w-4/5 lg:w-4/5 xl:w-8/12 md:mx-auto pt-40 md:pt-60"> {/* Centered and adjusted width */}
+   <div className="md:w-full mx-5 md:w-4/5 lg:w-4/5 xl:w-8/12 md:mx-auto pt-40 md:pt-60"> {/* Centered and adjusted width */}
      <div className=" rounded-3xl bg-gradient-to-r from-customBrown via-customRed to-customBrown p-1.5">
       
        <div className="text-center my-5">
@@ -129,7 +130,7 @@ Buy Now
 <br></br>
 <br></br>
          <div className='w-[90%] m-auto text-center my-10'>
-
+ 
           <ul className='list-inside list-disc '>
             <li>These services should just be objective above 18+ Users.</li>
             <li>The ads + landing page should just promote day by day Fantasy Sports.</li>
@@ -149,8 +150,8 @@ Buy Now
     <a className="link link-hover">Marketing</a>
     <a className="link link-hover">Advertisement</a>
   </nav>  */}
-  <div className='flex flex-row items-center justify-around w-full'>
-  <nav className='basis-1/4 flex flex-col md:my-0 my-4'>
+  <div className='flex flex-row items-center justify-around w-[80%]'>
+  <nav className='basis-1/4 flex flex-col md:my-0 my-4 '>
     <h6 className="footer-title font-semibold">ACP. Company</h6> 
     <a className="link hover:link">About us</a>
     <a className="link link-hover">Contact</a>
@@ -165,6 +166,7 @@ Buy Now
   </nav>
   </div>
 </footer>
+</div>
  </div>
   )
 }
