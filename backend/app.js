@@ -13,6 +13,7 @@ var matchesRouter = require('./routes/matches');
 var prevmatchesRouter = require('./routes/previousMatches');
 var upcomingmatchesRouter = require('./routes/upcomingMatches');
 var nextmatchRouter = require('./routes/nextMatch');
+var matchDetails = require('./routes/matchdetails')
 
 var app = express();
 
@@ -34,6 +35,7 @@ app.use('/matches', matchesRouter);
 app.use('/prevmatches', prevmatchesRouter);
 app.use('/upcomingmatches', upcomingmatchesRouter);
 app.use('/nextmatch', nextmatchRouter);
+app.use('/matchdetails',matchDetails)
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

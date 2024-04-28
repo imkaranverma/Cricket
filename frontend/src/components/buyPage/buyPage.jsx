@@ -1,6 +1,6 @@
 import React from 'react'
-import team1 from '../../assets/team1.png'
-import team2 from '../../assets/team2.png'
+import team1 from '../../assets/CSK.png'
+import team2 from '../../assets/MI.png'
 import './buyPage.css'
 
 function BuyPage() {

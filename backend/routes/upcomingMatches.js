@@ -6,6 +6,7 @@ const Match = require('../model/match');
 router.get('/', async (req, res) => {
     try {
       const today = new Date();
+      today.setHours(0, 0, 0, 0);
       const upcomingMatches = await Match.find({ matchDate: { $gte: today } }).sort({ matchDate: 1 });
       res.json(upcomingMatches);
     } catch (err) {
