@@ -10,7 +10,7 @@ import BuyPage from './components/buyPage/buyPage';
 import Previous from './components/Previous_page';
 import AboutUs from './components/aboutUs/aboutUs';
 import ContactPage from './components/contactUs/contactUs';
-import HeroSection from './components/hero/heroSection';
+import HeroSection from './components/hero/hero';
 import Upcoming from './components/upcoming'
 
 function App() {
@@ -23,9 +23,9 @@ function App() {
         {/* <Route path="/" element={<BuyPage/>} /> */}
         {/* <Route path="/" element={<AboutUs/>} /> */}
         {/* <Route path="/" element={<ContactPage/>} /> */}
-        {/* <Route path="/" element={<HeroSection/>} /> */}
+        <Route path="/" element={<HeroSection/>} />
         <Route path="/prediction" element={<Prediction_Page />} />
-        <Route path="/" element={<Home_Page/>} />
+        {/* <Route path="/" element={<Home_Page/>} /> */}
         <Route path="/previousmatches/prediction/:uniqueId" element={<Prediction_Page />} />
         <Route path="/buy" element={<Buy_Page />} />
         <Route path='/about' element={<About/>}></Route>
